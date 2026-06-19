@@ -6,7 +6,7 @@ const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const swaggerUi = require('swagger-ui-express');
 
-const logger = require('./utils/logger');
+const logger = console;
 const { errorHandler, notFoundHandler } = require('./middleware/errorHandler');
 const swaggerSpec = require('./docs/swagger');
 
